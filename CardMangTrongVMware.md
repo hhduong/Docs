@@ -7,8 +7,8 @@
 ## <a name = "cach-kn"></a> 1. Cách kết nối mạng cho các máy ảo trên phần mềm VMware Workstation
 
 -  Các Vmnet là gì? Mỗi Vmnet chính là 1 bộ chia mạng ảo hay từ chuyên môn chính là Switch ảo mà Vmware Workstation tạo ra
- * Ta thường thấy Vmnet là Vmnet1 và Vmnet8 trong máy ảo. Vì mặc định khi cài xong phần mềm VMware trong phần Network của máy thật có 2 adapter mạng VMnet1 và Vmnet8.
- * Khi tạo mấy ảo có thể tạo 1 hay nhiều ca mạng,  tuy nhiên điều bắt buộc là mỗi card mạng phải được gán vào 1 Vmnet nào đó.
+  * Ta thường thấy Vmnet là Vmnet1 và Vmnet8 trong máy ảo. Vì mặc định khi cài xong phần mềm VMware trong phần Network của máy thật có 2 adapter mạng VMnet1 và Vmnet8.
+  * Khi tạo mấy ảo có thể tạo 1 hay nhiều ca mạng,  tuy nhiên điều bắt buộc là mỗi card mạng phải được gán vào 1 Vmnet nào đó.
 - Khi cài xong VMware, mặc định trong phần Network của máy thật sẽ có 2 Adapter mạng là VMware Network Adapter VMnet1 và VMware Network Adapter VMnet8. Do đó chỉ cần đặt địa chỉ IP cho 2 card mạng này của máy thật cùng dải IP với các máy ảo cũng nối vào 2 Switch ảo này, thì máy thật và máy ảo có thể kết nối với nhau qua một trong 2 card mạng này.
 - Khi các máy tính cùng được nối vào 1 Switch, nếu chúng có địa chỉ IP (có thể là tĩnh – static hoặc động – DHCP) cùng dải mạng thì chúng có thể kết nối trực tiếp với nhau. Trường hợp Switch đó có nối với 1 thiết bị thực hiện chức năng DHCP thì các máy tính để IP động sẽ nhận được địa chỉ IP từ thiết bị này. Nếu không có thiết bị cấp DHCP thì các máy tính phải đặt IP tĩnh và các IP cùng dải mạng thì mới làm việc được với nhau.
 
