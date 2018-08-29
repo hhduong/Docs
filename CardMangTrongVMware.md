@@ -13,11 +13,11 @@
 - Khi các máy tính cùng được nối vào 1 Switch, nếu chúng có địa chỉ IP (có thể là tĩnh – static hoặc động – DHCP) cùng dải mạng thì chúng có thể kết nối trực tiếp với nhau. Trường hợp Switch đó có nối với 1 thiết bị thực hiện chức năng DHCP thì các máy tính để IP động sẽ nhận được địa chỉ IP từ thiết bị này. Nếu không có thiết bị cấp DHCP thì các máy tính phải đặt IP tĩnh và các IP cùng dải mạng thì mới làm việc được với nhau.
 
 ## <a name = "cach-kn"></a> 2. Các chế độ kết nối mạng trên VMware
-1. Card Bridge:
+### 1. `Card Bridge`:
  - Chế độ này sẽ sử dụng card vật lý (LAN, Wifi, Bluetooth…) của máy thật để chia sẻ kết nối. Máy tính thật có thể có nhiều card mạng vật lý.
  - Mặc định VMware để Bridge ở chế độ Automatic, tức là VMware sẽ tự động chọn một trong những card mạng vật lý của máy thật để chia sẻ kết nối.
  - Do đó khi sử dụng card mạng này IP của máy ảo sẽ cùng với dải IP của máy thật.Lưu ý: Card Bridge trên máy ảo chỉ có thể giao tiếp với card mạng thật trên máy thật.
-2. Card NAT:
+### 2. `Card NAT`:
  - Ở chế độ NAT, VMnet không chỉ còn là 1 Switch ảo mà đúng hơn nó chính là 1 Modem (router) ảo. Kết nối đến card vật lý thật ở chế độ Bridge được coi là đường WAN của Modem ảo này.
  - IP của card mạng vật lý của máy thật ở chế độ Bridge chính là IP WAN của modem ảo
  - Các máy tính ảo có card mạng ở chế độ NAT sẽ nằm trong mạng LAN của modem
@@ -28,7 +28,7 @@
   - Card NAT không thể giao tiếp với mạng vật lý mà máy tính thật đang kết nối. 
   - Tuy nhiên nhờ cơ chế NAT được tích hợp trong VMWare, máy tính ảo có thể gián tiếp liên lạc với mạng vật lý bên ngoài.
 
-3. Card Host-Only:
+### 3. `Card Host-Only`:
  - Switch ảo không được kết nối gì với các card vật lý của máy tính thật
  - máy tính ảo sẽ không thể kết nối được đến bất kỳ thiết bị nào ngoài máy tính thật bởi tất cả các kết nối đến các thiết bị vật lý bên ngoài đều phải thông qua đến card mạng vật lý thật của máy tính thật
  - Ở chế độ Host-Only này, Vmware có lựa chọn cho phép Vmware là 1 thiết bị cấp phát DHCP cho các thiết bị kết nối vào Switch ảo. Nếu chọn chức năng này, các thiết bị nối đến Switch ảo này sẽ nhận được địa chỉ do chính VMware cấp.
