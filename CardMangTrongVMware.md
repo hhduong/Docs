@@ -12,7 +12,7 @@
 - Khi cài xong VMware, mặc định trong phần Network của máy thật sẽ có 2 Adapter mạng là VMware Network Adapter VMnet1 và VMware Network Adapter VMnet8. Do đó chỉ cần đặt địa chỉ IP cho 2 card mạng này của máy thật cùng dải IP với các máy ảo cũng nối vào 2 Switch ảo này, thì máy thật và máy ảo có thể kết nối với nhau qua một trong 2 card mạng này.
 - Khi các máy tính cùng được nối vào 1 Switch, nếu chúng có địa chỉ IP (có thể là tĩnh – static hoặc động – DHCP) cùng dải mạng thì chúng có thể kết nối trực tiếp với nhau. Trường hợp Switch đó có nối với 1 thiết bị thực hiện chức năng DHCP thì các máy tính để IP động sẽ nhận được địa chỉ IP từ thiết bị này. Nếu không có thiết bị cấp DHCP thì các máy tính phải đặt IP tĩnh và các IP cùng dải mạng thì mới làm việc được với nhau.
 
-## <a name = "cach-kn"></a> 2. Các chế độ kết nối mạng trên VMware
+## <a name = "cac-cd"></a> 2. Các chế độ kết nối mạng trên VMware
 ### 1. `Card Bridge`:
  - Chế độ này sẽ sử dụng card vật lý (LAN, Wifi, Bluetooth…) của máy thật để chia sẻ kết nối. Máy tính thật có thể có nhiều card mạng vật lý.
  - Mặc định VMware để Bridge ở chế độ Automatic, tức là VMware sẽ tự động chọn một trong những card mạng vật lý của máy thật để chia sẻ kết nối.
