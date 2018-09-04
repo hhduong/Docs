@@ -21,7 +21,7 @@
          * SSH key command cho hệ thống biết là bạn muốn mở một kết nối được mã hóa Secure Shell Connection.
          * `{user}` đại diện cho tài khoản người dùng bạn muốn dùng để truy cập.
          * `{host}` đại diện cho máy tính bạn muốn dùng để truy cập. Nó có thể là một địa chỉ IP (ví dụ 244.235.23.19) hoặc một tên miền (ví dụ, www.xyzdomain.com).
-   * Khi bạn nhấn enter, nó sẽ hỏi bạn nhập mật khẩu tương ứng cho tài khoản. Khi bạn gõ, bạn sẽ không thấy bất kỳ dấu hiệu nào trên màn hình, nhưng nếu bạn gõ đúng mật khẩu và nhấn enter, bạn sẽ vào được hệ thống và nhận thông báo đăng nhập thành công
+* Khi bạn nhấn enter, nó sẽ hỏi bạn nhập mật khẩu tương ứng cho tài khoản. Khi bạn gõ, bạn sẽ không thấy bất kỳ dấu hiệu nào trên màn hình, nhưng nếu bạn gõ đúng mật khẩu và nhấn enter, bạn sẽ vào được hệ thống và nhận thông báo đăng nhập thành công
 * [Một số lệnh của SSH](https://www.hostinger.vn/huong-dan/lenh-ssh-co-ban/)
 
  
