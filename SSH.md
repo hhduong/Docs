@@ -23,6 +23,16 @@
          * `{host}` đại diện cho máy tính bạn muốn dùng để truy cập. Nó có thể là một địa chỉ IP (ví dụ 244.235.23.19) hoặc một tên miền (ví dụ, www.xyzdomain.com).
 * Khi bạn nhấn enter, nó sẽ hỏi bạn nhập mật khẩu tương ứng cho tài khoản. Khi bạn gõ, bạn sẽ không thấy bất kỳ dấu hiệu nào trên màn hình, nhưng nếu bạn gõ đúng mật khẩu và nhấn enter, bạn sẽ vào được hệ thống và nhận thông báo đăng nhập thành công
 * [Một số lệnh của SSH](https://www.hostinger.vn/huong-dan/lenh-ssh-co-ban/)
+* SSH làm việc thông qua 3 bước đơn giản:
+    * Định danh host - xác định định danh của hệ thống tham gia phiên làm việc SSH
+        * Việc định danh host được thực hiện qua việc trao đổi khoá. Mỗi máy tính điều khiển SSH có một khoá định danh duy nhất
+        * Khoá này gồm hai thành phần: khoá riêng tư và khoá công cộng
+    * Mã hoá - thiết lập kênh làm việc mã hoá
+    * Chứng thực - xác thực người sử dụng có quyền đăng nhập hệ thống
+
+
+
+
 
  
 
